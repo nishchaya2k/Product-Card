@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+  /* border box means content will shrink not container if padding or margin added */
+    box-sizing:border-box;
+  }
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    /* we made the product flex so that we can create equall spacing */
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: palegoldenrod; */
+    height: 60%;
+    width: 65%;
+}
+
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    /* out of 100% of space allocated to it, total space 65% out it 50% to card
+    50% to description and 100% of that 50%, card uses 80%*/
+    width: 80%;  
+}
+
+.description{
+    /* description uses 95% out of the space allocated to it */
+    width: 95%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: Georgia, serif;
+}
+
+h4{
+    font-family: Papyrus;
+}
+
+h5{
+    font-family: fantasy;
+}
+
+#price{
+    display: flex;
+
+}
+
+.actualprice{
+    font-style: normal;
+    color: darkgreen;
+    font-size: 38px;
+    font-weight: bold;
+}
+.discountprice{
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration-line: line-through;
+}
+
+.descButton{
+display: flex;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: darkgreen;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-cart{
+    display: flex;
+    justify-content: start;
+}
+
+/* #descButton.img{
+    width: fit-content;
+} */
